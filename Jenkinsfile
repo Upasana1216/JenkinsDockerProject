@@ -14,7 +14,7 @@ pipeline {
             }
         }
 
-        state('Push to DockerHub') {
+        stage('Push to DockerHub') {
             steps {
                 script {
                     docker.withRegistry('', 'dockerhub-creds'){
