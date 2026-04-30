@@ -23,7 +23,7 @@ pipeline {
             }
         }
 
-        state('Test') {
+        stage('Test') {
             steps {
                 sh 'npm test'
             }
