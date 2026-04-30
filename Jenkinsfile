@@ -6,6 +6,12 @@ pipeline {
     }
 
     stages {
+
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
         stage('Build docker image') {
             steps {
                 script {
