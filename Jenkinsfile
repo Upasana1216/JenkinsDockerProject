@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'node18'
+    }
+
     environment {
         DOCKER_IMAGE = "upasanasingh123/jenkinsdockerapp"
     }
