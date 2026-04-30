@@ -3,6 +3,10 @@
     "version": "1.0.0",
     "main": "app.js",
     "scripts": {
-        "build": "echo 'No build step required'"
+        "build": "echo 'No build step required'",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "jest": "^30.3.0"
     }
 }

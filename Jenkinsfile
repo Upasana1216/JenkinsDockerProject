@@ -22,6 +22,12 @@ pipeline {
                 sh 'npm run build'
             }
         }
+
+        state('Test') {
+            steps {
+                sh 'npm test'
+            }
+        }
         stage('Build docker image') {
             steps {
                 script {
