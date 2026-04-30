@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "upasanasingh123/jenkinsDockerApp"
+        DOCKER_IMAGE = "upasanasingh123/jenkinsdockerapp"
     }
 
     stages {
-        stage('Build') {
+        stage('Build docker image') {
             steps {
                 script {
                     docker.build("${DOCKER_IMAGE}:latest")
