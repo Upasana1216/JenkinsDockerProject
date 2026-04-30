@@ -1,5 +1,8 @@
 {
     "name": "jenkins-docker-demo",
     "version": "1.0.0",
-    "main": "app.js"
+    "main": "app.js",
+    "scripts": {
+        "build": "echo 'No build step required'"
+    }
 }
