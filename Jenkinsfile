@@ -28,6 +28,7 @@ pipeline {
                 sh 'npm test'
             }
         }
+
         stage('Build docker image') {
             steps {
                 script {
@@ -45,6 +46,18 @@ pipeline {
 
                 }
             }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline completed' 
+        }
+        success {
+            echo 'Pipeline completed successfully'
+        }
+        failure {
+            echo 'Pipeline failed'
         }
     }
 }
