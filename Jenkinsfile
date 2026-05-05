@@ -54,10 +54,10 @@ pipeline {
             echo 'Pipeline completed' 
         }
         success {
-            echo 'Pipeline completed successfully'
+            echo 'We are testing WebHooks'
         }
         failure {
-            echo 'Pipeline failed'
+            echo 'Pipeline failed Oopss'
         }
     }
 }
